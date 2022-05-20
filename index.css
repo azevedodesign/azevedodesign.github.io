@@ -1,0 +1,60 @@
+@import url('./main.css');
+
+.welcome-section {
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  padding: 40px 20%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-link {
+  padding: 4px 5px 3px 5px;
+  margin: 3px 35px;
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-family-bold);
+}
+
+.header-link-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-link:hover {
+  color: var(--primary);
+}
+
+.header-link.filled-link {
+  background-color: var(--primary);
+  border-radius: 6px;
+}
+
+.header-link.filled-link:hover {
+  color: var(--background);
+}
+
+.welcome-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-title {
+  font-size: 55px;
+  text-align: center;
+  font-weight: 300;
+  font-family: var(--font-family);
+}
+
+.welcome-title strong {
+  font-size: 80px;
+  font-family: var(--font-family-bold);
+}
