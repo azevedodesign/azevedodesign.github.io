@@ -8,15 +8,23 @@
 }
 
 .header {
+  opacity: 0;
   display: flex;
-  padding: 40px 20%;
   align-items: center;
+  padding: 25px 20% 10px 20%;
   justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    padding: 25px 15px 10px 25px;
+  }
+}
+
 .header-link {
+  font-size: 16px;
   padding: 4px 5px 3px 5px;
-  margin: 3px 35px;
+  margin: 3px 20px;
   color: var(--white);
   text-decoration: none;
   font-family: var(--font-family-bold);
@@ -29,6 +37,7 @@
 
 .header-link:hover {
   color: var(--primary);
+  transition: color 0.4s;
 }
 
 .header-link.filled-link {
@@ -40,21 +49,97 @@
   color: var(--background);
 }
 
+.welcome-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+
 .welcome-content {
   flex: 1;
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
   align-items: center;
   justify-content: center;
 }
 
 .welcome-title {
-  font-size: 55px;
+  z-index: 1;
+  opacity: 0;
+  font-size: 30px;  
   text-align: center;
   font-weight: 300;
   font-family: var(--font-family);
+  animation-duration: 3s;
+  animation-delay: 1.7s;
+  animation-fill-mode: forwards;
+  animation-name: welcome-title;
+  animation-timing-function: ease;
+}
+
+@keyframes welcome-title {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }
 
 .welcome-title strong {
-  font-size: 80px;
+  font-size: 60px;
   font-family: var(--font-family-bold);
+}
+
+.welcome-background {
+  top: 40%;
+  opacity: 0;
+  position: absolute;
+  transform: translate(0%, -50%);
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: background-image;
+  animation-timing-function: ease;
+}
+
+@keyframes background-image {
+  0% { top: 30%; opacity: 0 }
+  65% { top: 50%; opacity: 0.5 }
+  100% { top: 50%; opacity: 0.9 }
+}
+
+.whatsapp-button {
+  opacity: 0;
+  font-size: 18px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  color: var(--white);
+  transition: background-color 0.4s;
+  padding: 10px 25px 11px 25px;
+  font-family: var(--font-family);
+  border: 1px solid var(--primary);
+  background-color: var(--background);
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+.fade-in {
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-name: fade-in;
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.scroll-button {
+  opacity: 0;
+  margin-bottom: 20px;
 }
