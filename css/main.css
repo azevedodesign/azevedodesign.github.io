@@ -17,7 +17,7 @@
   font-weight: 700;
   font-style: normal;
   font-family: "Gotham-Bold";
-  src: url("../fonts/gotham-bold.ttf") format("opentype");
+  src: url("../fonts/gotham-bold.otf") format("opentype");
 }
 
 @font-face {
@@ -33,10 +33,10 @@
     --text-on-primary: rgba(0, 0, 0, 1);
     --footer-background: #1B1B1B;
 
-    --font-family-thin: "Gotham-Thin";
-    --font-family: "Gotham-Book";
-    --font-family-medium: "Gotham-Medium";
-    --font-family-bold: "Gotham-Bold";
+    --font-family-thin: "Gotham-Thin", Arial, "Times New Roman", Georgia;
+    --font-family: "Gotham-Book", Arial, "Times New Roman", Georgia;
+    --font-family-medium: "Gotham-Medium", Arial, "Times New Roman", Georgia;
+    --font-family-bold: "Gotham-Bold", Arial, "Times New Roman", Georgia;
 }
   
 html {

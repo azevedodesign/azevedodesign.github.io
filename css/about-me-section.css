@@ -41,7 +41,6 @@
 
 .about-me-media-container {
   display: flex;
-  column-gap: 20px;
 }
 
 .about-me-media-button {
@@ -54,6 +53,7 @@
   justify-content: center;
   background-color: var(--primary);
   transition: border-radius 0.4s;
+  margin-right: 20px;
 }
 
 .about-me-media-button:hover {
