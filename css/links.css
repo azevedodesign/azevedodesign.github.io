@@ -1,0 +1,55 @@
+@import url('./main.css');
+
+.button-link {
+    height: 48px;
+    display: flex;
+    padding: 0px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--primary);
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container {
+    width: 100%;
+    max-width: 350px;
+}
+
+.title {
+    margin: 0px;
+    font-size: 27px;
+    margin-bottom: 7px;
+    font-family: var(--font-family-bold);
+}
+
+.subtitle {
+    margin: 0px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: var(--font-family-thin);
+}
+
+.button-text {
+    width: 100%;
+    text-align: center;
+    color: var(--text-on-primary);
+    font-family: var(--font-family-bold);
+}
+
+.logo {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
